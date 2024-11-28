@@ -9,11 +9,12 @@
     "Plugin"
   ],
   "type": "shopware-platform-plugin",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "license": "MIT",
   "require": {
     "shopware/core": "^6.5.0.0",
-    "symfony/messenger": "^6.0",
+    "symfony/messenger": "^v7.0.0",
+    "symfony/amqp-messenger": "^v7.0.0",
     "enqueue/amqp-lib": "^0.10"
   },
   "extra": {
