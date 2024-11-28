@@ -1,0 +1,36 @@
+{
+  "name": "aliuosio/shopware-rabbitmq-mail",
+  "description": "A Shopware 6 plugin to route all outgoing emails through RabbitMQ using Symfony Messenger. This plugin decouples email sending from Shopware's default mailer and ensures that all email messages are queued and processed by RabbitMQ for reliable and scalable email delivery.",
+  "keywords": [
+    "Shopware",
+    "RabbitMQ",
+    "Email",
+    "Messenger",
+    "Plugin"
+  ],
+  "type": "shopware-platform-plugin",
+  "version": "1.0.0",
+  "license": "MIT",
+  "require": {
+    "shopware/core": "^6.5.0.0",
+    "symfony/messenger": "^6.0",
+    "enqueue/amqp-lib": "^0.10"
+  },
+  "extra": {
+    "shopware-plugin-class": "RabbitMQMailPlugin\\RabbitMQMailPlugin",
+    "label": {
+      "de-DE": "RabbitMQ Mail Plugin",
+      "en-GB": "RabbitMQ Mail Plugin"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "RabbitMQMailPlugin\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "RabbitMQMailPlugin\\Tests\\": "tests/"
+    }
+  }
+}
